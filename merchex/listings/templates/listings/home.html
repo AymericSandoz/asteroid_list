@@ -1,0 +1,21 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+
+<section id="date-input-section">
+<h1> Cette application permet de lister les corps célestes qui passent à proximité de la Terre pendant une période donnée. </h1>
+<p> Saisir une date d'entrée et une date de fin. La différence entre les deux dates doit être inférieur ou égale à 7 jours.</h2>
+    <form id="date-form" action="/home/" method="post">
+        {% csrf_token %}
+        {{ form}}
+        <input type="submit"  class="submit-button" value="Rechercher">
+    </form>
+
+    {% if error %}
+        <p class="error"> {{error}}</p>
+    {% endif %}
+
+</section>
+
+{% endblock %}

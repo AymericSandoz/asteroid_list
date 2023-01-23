@@ -1,0 +1,61 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<section id="asteroids">
+<h1> Liste des astéroïdes</h1>
+
+    <table class="a">
+        <thead>
+          <tr>
+            <th>Nom de l'astéroïde</th>
+            <th>Diamètre estimé </th>
+            <th>Distance de la terre </th>
+            <th>Distance de la terre en équivalent Terre-Lune </th>
+            <th>Date de son prochain passage</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        {% for key, value in near_earth_objects.items %} 
+            {% for asteroid in value %}
+                <tr>
+                    <td><a href="{% url 'asteroid' asteroid.id asteroid.name %}">{{asteroid.name}}</a></td>
+                    <td>{{asteroid.estimated_diameter.meters.estimated_diameter_min|floatformat:0}} à {{asteroid.estimated_diameter.meters.estimated_diameter_max|floatformat:0}} m</td>
+                    {% for approach_data in asteroid.close_approach_data %}
+                        
+                        <td>{{approach_data.miss_distance.kilometers|floatformat:0}} km </td>
+                        <td>{{approach_data.miss_distance.lunar|floatformat:0}} </td>
+                        
+            
+                        
+                    {% endfor %}
+                    <!-- {% if asteroid.next_approach%}
+                    <td>{{asteroid.next_approach}}</td>
+                    {% else %}
+                    <td>Pas d'approche prévu</td>
+                    {% endif %} -->
+                    <td id="asteroid-{{asteroid.id}}">
+                      <button  onclick="get_next_approach_date('{{asteroid.id}}')">Cliquez-moi<i class="fa-solid fa-eye"></i></button>
+                  </td>
+
+                </tr>
+                
+            {% endfor %}
+        {% endfor %}
+        </tbody>
+      </table>
+      
+      
+
+
+</div>
+</section>
+
+
+
+{% endblock %}
+
+<script>
+  
+</script>
