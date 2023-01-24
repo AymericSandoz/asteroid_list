@@ -12,6 +12,22 @@ git clone https://github.com/AymericSandoz/asteroid_list.git
 
 ```
 
+Charger l'application
+
+```
+cd asteroid_list
+
+```
+
+Créer puis charger un environnement virtuel
+
+```
+python -m venv env
+
+env/Scripts/activate
+
+```
+
 Installer les packages nécéssaires
 
 ```
@@ -22,6 +38,8 @@ pip install -r requirements.txt
 Lancer le serveur sur votre marchine
 
 ```
+cd merchex
+
 python manage.py runserver
 
 ```
