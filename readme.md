@@ -24,3 +24,10 @@ Lancer le serveur sur votre marchine
 python manage.py runserver
 
 ```
+
+Lancer le serveur sur votre marchine
+
+```
+python manage.py runserver
+
+```
