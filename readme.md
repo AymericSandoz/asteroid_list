@@ -58,7 +58,7 @@ python manage.py runserver
 
 ## Option
 
-La chargement de la date du prochain passage près de la terre de tous les astéroïdes n'est pas activé d'office. Cette option a été remplacé par un bouton permettant, au clic, de voir prochain passage près de la terre d'un astéroïdes. L'objectif étant d'éviter un temps de chargement trop long.
+La chargement de la date du prochain passage près de la terre de tous les astéroïdes n'est pas activé d'office. Cette option a été remplacé par un bouton permettant, au clic, de voir le prochain passage près de la terre d'un astéroïde donné. L'objectif étant d'éviter un temps de chargement trop long.
 
 Pour réactiver cette option, il faut :
 
@@ -67,7 +67,7 @@ Pour réactiver cette option, il faut :
 - Ouvrir le fichier view.py - asteroid_list\merchex\listings>
 - Enlever les commentaires des lignes 22 à 44 et de la ligne 74.
 
-- Ouvrir le fichier asteroids.html - asteroid_list\merchex\listings\templates\listings> >
+- Ouvrir le fichier asteroids.html - asteroid_list\merchex\listings\templates\listings>
 - Enlever les commentaires des lignes 36 à 40.
 - Supprimez les lignes 43 à 45.
 
@@ -78,5 +78,5 @@ Pour réactiver cette option, il faut :
 - asteroid.html --> Fichier affichant les 5 derniers passages d'un astéroïdes près de la terre.
 - asteroids.html --> Fichier affichant la liste des astéroïdes passant près de la terre durant une période donnée.
 - base.html --> fichier html de base.
-- home.html --> page d'acceuil permettant à l'utilisateur d'entrer une date d'entrée et une date de fin de maximum 7 jours.
+- home.html --> page d'acceuil permettant à l'utilisateur de saisir une date d'entrée et une date.
 - info.html --> Courte description du contexte du projet.
