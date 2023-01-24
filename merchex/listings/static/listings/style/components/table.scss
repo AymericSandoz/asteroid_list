@@ -1,0 +1,89 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+
+    th {
+        height: 3.5em;
+    }
+
+    tbody td {
+        text-align: center;
+        height: 3em;
+    }
+
+
+
+
+
+    thead {
+        background-color: $color-3;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: $color-4;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: $color-5;
+    }
+}
+
+
+
+
+#asteroid-last-approaches table {
+
+    thead th:nth-child(1) {
+        width: 50%;
+    }
+
+    thead th:nth-child(2) {
+        width: 50%;
+    }
+
+
+
+
+}
+
+
+
+#asteroids table {
+    thead th:nth-child(1) {
+        width: 30%;
+    }
+
+    thead th:nth-child(2) {
+        width: 20%;
+    }
+
+    thead th:nth-child(3) {
+        width: 15%;
+    }
+
+    thead th:nth-child(4) {
+        width: 15%;
+    }
+
+    thead th:nth-child(4) {
+        width: 25%;
+    }
+
+
+
+   
+
+
+   
+
+    button {
+        background-color: transparent;
+        cursor: pointer;
+
+        i {
+            margin-left: 2px;
+        }
+    }
+}

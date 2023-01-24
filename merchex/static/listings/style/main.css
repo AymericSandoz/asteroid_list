@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/fond_ecran.jpg);
+  background-image: url(../images/fond_ecran.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,220 +16,6 @@ body {
 a {
   text-decoration: none;
   cursor: pointer; }
-
-nav {
-  width: 100%;
-  height: 60px;
-  opacity: 0.9;
-  font-weight: bold;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); }
-  nav ul {
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-size: 30px; }
-    nav ul a {
-      color: white;
-      padding-left: 20px;
-      padding-right: 20px; }
-
-#date-input-section {
-  background-color: #708090;
-  width: 50%;
-  height: 500px;
-  margin: auto;
-  border-radius: 20px;
-  opacity: 0.95;
-  margin-top: 50px;
-  padding: 20px; }
-  #date-input-section h1 {
-    text-align: center;
-    color: black;
-    font-family: "sans-serif"; }
-  #date-input-section p {
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-family: "sans-serif"; }
-  #date-input-section #date-form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 30px 30px 40px;
-    margin: auto;
-    margin-top: 50px;
-    grid-gap: 10px; }
-    #date-input-section #date-form label {
-      font-size: 25px; }
-    #date-input-section #date-form .submit-button {
-      border-radius: 3px;
-      width: 100px;
-      height: 40px;
-      margin: auto;
-      grid-column: 1/3;
-      cursor: pointer;
-      margin-top: 40px;
-      color: black;
-      font-weight: bold;
-      background-color: #15418c; }
-      #date-input-section #date-form .submit-button:hover {
-        box-shadow: 0 2px 2px 2px rgba(10, 10, 9, 0.23); }
-  #date-input-section .error {
-    margin-top: 50px;
-    color: #8B0000; }
-  #date-input-section .loading-section {
-    display: none;
-    flex-direction: column;
-    margin-top: 80px; }
-    #date-input-section .loading-section p {
-      margin-top: 20px;
-      color: #15418c;
-      font-weight: bold; }
-  #date-input-section .spinner {
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex; }
-  #date-input-section .wave {
-    width: 5px;
-    height: 50px;
-    background: linear-gradient(45deg, #15418c, #fff);
-    margin: 10px;
-    animation: wave 1s linear infinite;
-    border-radius: 20px; }
-  #date-input-section .wave:nth-child(2) {
-    animation-delay: 0.1s; }
-  #date-input-section .wave:nth-child(3) {
-    animation-delay: 0.2s; }
-  #date-input-section .wave:nth-child(4) {
-    animation-delay: 0.3s; }
-  #date-input-section .wave:nth-child(5) {
-    animation-delay: 0.4s; }
-  #date-input-section .wave:nth-child(6) {
-    animation-delay: 0.5s; }
-  #date-input-section .wave:nth-child(7) {
-    animation-delay: 0.6s; }
-  #date-input-section .wave:nth-child(8) {
-    animation-delay: 0.7s; }
-  #date-input-section .wave:nth-child(9) {
-    animation-delay: 0.8s; }
-  #date-input-section .wave:nth-child(10) {
-    animation-delay: 0.9s; }
-
-@keyframes wave {
-  0% {
-    transform: scale(0); }
-  50% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0); } }
-
-#asteroids {
-  background-color: #708090;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  width: 70%;
-  margin: auto;
-  border-radius: 20px;
-  opacity: 0.95;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding: 20px; }
-  #asteroids a {
-    color: black; }
-  #asteroids h1 {
-    text-align: center; }
-  #asteroids table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid black;
-    border-spacing: 10px; }
-  #asteroids thead th:nth-child(1) {
-    width: 30%; }
-  #asteroids thead th:nth-child(2) {
-    width: 20%; }
-  #asteroids thead th:nth-child(3) {
-    width: 15%; }
-  #asteroids thead th:nth-child(4) {
-    width: 15%; }
-  #asteroids thead th:nth-child(4) {
-    width: 25%; }
-  #asteroids td {
-    letter-spacing: 1px; }
-  #asteroids tbody td {
-    text-align: center; }
-  #asteroids tfoot th {
-    text-align: right; }
-  #asteroids thead {
-    background-color: #778899; }
-  #asteroids tbody tr:nth-child(odd) {
-    background-color: #555555; }
-  #asteroids tbody tr:nth-child(even) {
-    background-color: #778899; }
-  #asteroids th {
-    height: 4em; }
-  #asteroids td {
-    height: 3em; }
-  #asteroids button {
-    background-color: transparent;
-    cursor: pointer; }
-    #asteroids button i {
-      margin-left: 2px; }
-
-#asteroid-last-approaches {
-  background-color: #708090;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  width: 70%;
-  margin: auto;
-  border-radius: 20px;
-  opacity: 0.95;
-  margin-top: 50px;
-  padding: 20px; }
-  #asteroid-last-approaches a {
-    color: black; }
-  #asteroid-last-approaches h1 {
-    text-align: center; }
-  #asteroid-last-approaches table {
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid black; }
-  #asteroid-last-approaches thead th:nth-child(1) {
-    width: 50%; }
-  #asteroid-last-approaches thead th:nth-child(2) {
-    width: 50%; }
-  #asteroid-last-approaches th {
-    height: 3.5em; }
-  #asteroid-last-approaches tbody td {
-    text-align: center;
-    height: 3em; }
-  #asteroid-last-approaches thead {
-    background-color: #778899; }
-  #asteroid-last-approaches tbody tr:nth-child(odd) {
-    background-color: #555555; }
-  #asteroid-last-approaches tbody tr:nth-child(even) {
-    background-color: #778899; }
-
-#info {
-  background-color: #708090;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  width: 50%;
-  margin: auto;
-  border-radius: 20px;
-  opacity: 0.95;
-  margin-top: 50px;
-  padding: 20px;
-  text-align: center; }
-  #info h1,
-  #info h3,
-  #info h3 {
-    color: black; }
-  #info a {
-    color: #15418c;
-    font-size: 20px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -536,4 +322,194 @@ template {
 [hidden] {
   display: none; }
 
-/*# sourceMappingURL=style.css.map */
+#date-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30px 30px 40px;
+  margin: auto;
+  margin-top: 50px;
+  grid-gap: 10px; }
+  #date-form label {
+    font-size: 25px; }
+  #date-form .submit-button {
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    grid-column: 1/3;
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+    background-color: #15418c; }
+    #date-form .submit-button:hover {
+      box-shadow: 0 2px 2px 2px rgba(10, 10, 9, 0.23); }
+
+nav {
+  width: 100%;
+  height: 60px;
+  opacity: 0.9;
+  font-weight: bold;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); }
+  nav ul {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 30px; }
+    nav ul a {
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px; }
+
+section {
+  background-color: #708090;
+  width: 50%;
+  margin: auto;
+  border-radius: 20px;
+  opacity: 0.95;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px; }
+
+.loading-section {
+  display: none;
+  flex-direction: column;
+  margin-top: 80px; }
+  .loading-section p {
+    margin-top: 20px;
+    color: #15418c;
+    font-weight: bold; }
+  .loading-section .spinner {
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  .loading-section .wave {
+    width: 5px;
+    height: 50px;
+    background: linear-gradient(45deg, #15418c, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px; }
+  .loading-section .wave:nth-child(2) {
+    animation-delay: 0.1s; }
+  .loading-section .wave:nth-child(3) {
+    animation-delay: 0.2s; }
+  .loading-section .wave:nth-child(4) {
+    animation-delay: 0.3s; }
+  .loading-section .wave:nth-child(5) {
+    animation-delay: 0.4s; }
+  .loading-section .wave:nth-child(6) {
+    animation-delay: 0.5s; }
+  .loading-section .wave:nth-child(7) {
+    animation-delay: 0.6s; }
+  .loading-section .wave:nth-child(8) {
+    animation-delay: 0.7s; }
+  .loading-section .wave:nth-child(9) {
+    animation-delay: 0.8s; }
+  .loading-section .wave:nth-child(10) {
+    animation-delay: 0.9s; }
+
+@keyframes wave {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black; }
+  table th {
+    height: 3.5em; }
+  table tbody td {
+    text-align: center;
+    height: 3em; }
+  table thead {
+    background-color: #778899; }
+  table tbody tr:nth-child(odd) {
+    background-color: #555555; }
+  table tbody tr:nth-child(even) {
+    background-color: #778899; }
+
+#asteroid-last-approaches table thead th:nth-child(1) {
+  width: 50%; }
+
+#asteroid-last-approaches table thead th:nth-child(2) {
+  width: 50%; }
+
+#asteroids table thead th:nth-child(1) {
+  width: 30%; }
+
+#asteroids table thead th:nth-child(2) {
+  width: 20%; }
+
+#asteroids table thead th:nth-child(3) {
+  width: 15%; }
+
+#asteroids table thead th:nth-child(4) {
+  width: 15%; }
+
+#asteroids table thead th:nth-child(4) {
+  width: 25%; }
+
+#asteroids table button {
+  background-color: transparent;
+  cursor: pointer; }
+  #asteroids table button i {
+    margin-left: 2px; }
+
+#asteroid-last-approaches {
+  width: 70%; }
+  #asteroid-last-approaches a {
+    color: black; }
+  #asteroid-last-approaches h1 {
+    text-align: center; }
+
+#asteroids {
+  width: 70%; }
+  #asteroids a {
+    color: black; }
+  #asteroids h1 {
+    text-align: center; }
+
+#date-input-section {
+  background-color: #708090;
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  border-radius: 20px;
+  opacity: 0.95;
+  margin-top: 50px;
+  padding: 20px; }
+  #date-input-section h1 {
+    text-align: center;
+    color: black;
+    font-family: "sans-serif"; }
+  #date-input-section p {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: "sans-serif"; }
+  #date-input-section .error {
+    margin-top: 50px;
+    color: #8B0000; }
+
+#info {
+  text-align: center; }
+  #info h1,
+  #info h3,
+  #info h3 {
+    color: black; }
+  #info a {
+    color: #15418c;
+    font-size: 20px; }
+
+/*# sourceMappingURL=main.css.map */

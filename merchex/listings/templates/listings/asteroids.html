@@ -30,11 +30,16 @@
             
                         
                     {% endfor %}
+
+                    <!-- Option : Remove bracket comment of the 5 lines below to display the next passage of each asteroid  -->
+
                     <!-- {% if asteroid.next_approach%}
                     <td>{{asteroid.next_approach}}</td>
                     {% else %}
                     <td>Pas d'approche prévu</td>
                     {% endif %} -->
+
+                    <!-- Option : comment the 3 lines below to  display a button with on an onclick function that display next passage of one asteroid --> 
                     <td id="asteroid-{{asteroid.id}}">
                       <button  onclick="get_next_approach_date('{{asteroid.id}}')">Cliquez-moi<i class="fa-solid fa-eye"></i></button>
                   </td>

@@ -1,0 +1,38 @@
+#date-form {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px 30px 40px;
+    margin: auto;
+    margin-top: 50px;
+    grid-gap: 10px;
+
+    label {
+        font-size: 25px;
+    }
+
+
+
+    .submit-button {
+        border-radius: 3px;
+        width: 100px;
+        height: 40px;
+        margin: auto;
+        grid-column: 1/3;
+        cursor: pointer;
+        margin-top: 40px;
+        color: black;
+        font-weight: bold;
+        background-color: $color-6;
+
+        &:hover {
+
+            box-shadow: 0 2px 2px 2px rgba(10, 10, 9, 0.23);
+
+        }
+    }
+
+
+
+
+}

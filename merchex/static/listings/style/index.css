@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/fond_ecran.jpg);
+  background-image: url(../images/fond_ecran.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -536,4 +536,4 @@ template {
 [hidden] {
   display: none; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
