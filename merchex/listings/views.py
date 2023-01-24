@@ -10,7 +10,6 @@ import requests
 import pandas as pd
 from pandas import json_normalize
 from .forms import DateForm
-
 import datetime as datetime
 
 def info(request):
@@ -20,30 +19,29 @@ def info(request):
 
 #Option: Function that takes a list of asteroids as a parameter and returns this list of asteroids with the next approach to earth for each of these asteroids
 #Not used in current version
-def get_next_approach(near_earth_objects):
-    for key, value in near_earth_objects.items():
-                for asteroid in value:
+# def get_next_approach(near_earth_objects):
+#     for key, value in near_earth_objects.items():
+#                 for asteroid in value:
+#                     url_api=f'https://api.nasa.gov/neo/rest/v1/neo/{asteroid["id"]}?api_key=lkU4tlO9nq6DMmRHmd8yWXz6h5kJL2cwQ6QZa6BC'   
+#                     req = requests.get(url_api)
+#                     response=req.json()
+#                     #convert to dataframe for easier sorting
+#                     response = json_normalize(response["close_approach_data"])
 
-                    url_api=f'https://api.nasa.gov/neo/rest/v1/neo/{asteroid["id"]}?api_key=lkU4tlO9nq6DMmRHmd8yWXz6h5kJL2cwQ6QZa6BC'   
-                    req = requests.get(url_api)
-                    response=req.json()
-                    #convert to dataframe for easier sorting
-                    response = json_normalize(response["close_approach_data"])
-
-                    #only keep future approaches
-                    today=datetime.date.today()
-                    close_approach_dates=response['close_approach_date']
-                    close_approach_dates = pd.to_datetime(close_approach_dates).dt.date
+#                     #only keep future approaches
+#                     today=datetime.date.today()
+#                     close_approach_dates=response['close_approach_date']
+#                     close_approach_dates = pd.to_datetime(close_approach_dates).dt.date
                     
-                    future_close_approach_dates = response.loc[(close_approach_dates >= today)]
-                    future_close_approach_dates=future_close_approach_dates.reset_index(drop = True)
+#                     future_close_approach_dates = response.loc[(close_approach_dates >= today)]
+#                     future_close_approach_dates=future_close_approach_dates.reset_index(drop = True)
                     
-                    #add next approach to 
-                    if future_close_approach_dates['close_approach_date'].empty!=True:
-                        asteroid["next_approach"]=future_close_approach_dates['close_approach_date'].iloc[0]
+#                     #add next approach to 
+#                     if future_close_approach_dates['close_approach_date'].empty!=True:
+#                         asteroid["next_approach"]=future_close_approach_dates['close_approach_date'].iloc[0]
                         
 
-    return near_earth_objects
+#     return near_earth_objects
 
 
 def get_asteroids(request):
