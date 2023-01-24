@@ -75,8 +75,8 @@ Pour réactiver cette option, il faut :
 
 ####
 
-asteroid.html => Fichier affichant les 5 derniers passages d'un astéroïdes près de la terre.
-asteroids.html => Fichier affichant la liste des astéroïdes passant près de la terre durant une période donnée.
-base => fichier html de base.
-home => page d'acceuil permettant à l'utilisateur d'entrer une date d'entrée et une date de fin de maximum 7 jours.
-info => Courte description du contexte du projet.
+- asteroid.html --> Fichier affichant les 5 derniers passages d'un astéroïdes près de la terre.
+- asteroids.html --> Fichier affichant la liste des astéroïdes passant près de la terre durant une période donnée.
+- base.html --> fichier html de base.
+- home.html --> page d'acceuil permettant à l'utilisateur d'entrer une date d'entrée et une date de fin de maximum 7 jours.
+- info.html --> Courte description du contexte du projet.
