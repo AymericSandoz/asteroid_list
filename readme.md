@@ -1,4 +1,4 @@
-# gDescription générale du projet
+# Description générale du projet
 
 Projet Django réalisé dans le cadre d'une recherche d'alternance.
 Application permettant de lister les corps célestes qui passent à proximité de la terre durant une période donnée.
@@ -28,7 +28,9 @@ python manage.py runserver
 
 ## Outils utilisés
 
--Django
--Python
--Javascript
--Sass
+####
+
+- Django
+- Python
+- Javascript
+- Sass
